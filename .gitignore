@@ -8,3 +8,6 @@ tmp/*
 !tmp/.gitkeep
 
 list.txt
+
+uploads/*
+!uploads/.gitkeep
