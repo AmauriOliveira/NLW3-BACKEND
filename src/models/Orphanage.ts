@@ -29,7 +29,7 @@ export default class Orphanage {
   instructions: string;
 
   @Column()
-  phone: string;
+  whatsapp: string;
 
   @Column()
   opening_hours: string;

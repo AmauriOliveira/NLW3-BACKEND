@@ -40,7 +40,7 @@ export default class createOrphanages1602611234357
             type: 'text',
           },
           {
-            name: 'phone',
+            name: 'whatsapp',
             type: 'varchar',
           },
           {
