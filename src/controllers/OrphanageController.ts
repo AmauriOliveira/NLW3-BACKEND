@@ -35,6 +35,7 @@ export default {
       longitude,
       about,
       instructions,
+      phone,
       opening_hours,
       open_on_weekends,
     } = request.body;
@@ -53,8 +54,9 @@ export default {
       longitude,
       about,
       instructions,
+      phone,
       opening_hours,
-      open_on_weekends,
+      open_on_weekends : open_on_weekends === 'true',
       images,
     };
     const schema = yup.object().shape({
@@ -63,6 +65,7 @@ export default {
       longitude: yup.number().required(),
       about: yup.string().required().max(300),
       instructions: yup.string().required(),
+      phone: yup.string().required(),
       opening_hours: yup.string().required(),
       open_on_weekends: yup.boolean().required(),
       images: yup.array(

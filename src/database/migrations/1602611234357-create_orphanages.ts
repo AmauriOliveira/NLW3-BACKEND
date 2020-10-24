@@ -40,6 +40,10 @@ export default class createOrphanages1602611234357
             type: 'text',
           },
           {
+            name: 'phone',
+            type: 'varchar',
+          },
+          {
             name: 'opening_hours',
             type: 'varchar',
           },
